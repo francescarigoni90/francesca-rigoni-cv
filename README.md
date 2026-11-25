@@ -44,6 +44,6 @@ Once Francesca Rigoni's GitHub account is created:
 
 ## Live URL
 Once deployed, the site will be accessible at:
-`https://GITHUB_USERNAME.github.io/francesca-rigoni-cv/`
+`https://francescarigoni90.github.io/francesca-rigoni-cv/`
 
 *(Note: In GitHub repo **Settings → Pages**, verify that the source is set to the `gh-pages` branch, `/ (root)` folder.)*
