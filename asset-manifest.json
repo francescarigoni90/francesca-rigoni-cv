@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/francesca-rigoni-cv/static/css/main.07ba93ae.css",
-    "main.js": "/francesca-rigoni-cv/static/js/main.bca92e26.js",
+    "main.css": "/francesca-rigoni-cv/static/css/main.512dae0c.css",
+    "main.js": "/francesca-rigoni-cv/static/js/main.5c11ac89.js",
     "static/js/453.72a4bc83.chunk.js": "/francesca-rigoni-cv/static/js/453.72a4bc83.chunk.js",
+    "static/media/profile.jpeg": "/francesca-rigoni-cv/static/media/profile.0cb60d1059d9e3ad9a16.jpeg",
     "index.html": "/francesca-rigoni-cv/index.html",
-    "main.07ba93ae.css.map": "/francesca-rigoni-cv/static/css/main.07ba93ae.css.map",
-    "main.bca92e26.js.map": "/francesca-rigoni-cv/static/js/main.bca92e26.js.map",
+    "main.512dae0c.css.map": "/francesca-rigoni-cv/static/css/main.512dae0c.css.map",
+    "main.5c11ac89.js.map": "/francesca-rigoni-cv/static/js/main.5c11ac89.js.map",
     "453.72a4bc83.chunk.js.map": "/francesca-rigoni-cv/static/js/453.72a4bc83.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07ba93ae.css",
-    "static/js/main.bca92e26.js"
+    "static/css/main.512dae0c.css",
+    "static/js/main.5c11ac89.js"
   ]
 }
