@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/francesca-rigoni-cv/static/css/main.512dae0c.css",
-    "main.js": "/francesca-rigoni-cv/static/js/main.5c11ac89.js",
+    "main.css": "/francesca-rigoni-cv/static/css/main.c57c7be3.css",
+    "main.js": "/francesca-rigoni-cv/static/js/main.b6ee58a0.js",
     "static/js/453.72a4bc83.chunk.js": "/francesca-rigoni-cv/static/js/453.72a4bc83.chunk.js",
+    "static/media/glasgow.png": "/francesca-rigoni-cv/static/media/glasgow.558a04d3725dd700dc93.png",
     "static/media/profile.jpeg": "/francesca-rigoni-cv/static/media/profile.0cb60d1059d9e3ad9a16.jpeg",
+    "static/media/unibo.png": "/francesca-rigoni-cv/static/media/unibo.9297ae38e297f92a6957.png",
+    "static/media/mit.png": "/francesca-rigoni-cv/static/media/mit.9654b6a1d816dd614528.png",
+    "static/media/dunnhumby.png": "/francesca-rigoni-cv/static/media/dunnhumby.9e0c679bb32f86d37c2e.png",
+    "static/media/imperial.png": "/francesca-rigoni-cv/static/media/imperial.c90343372fb9f229dd88.png",
+    "static/media/gfk.png": "/francesca-rigoni-cv/static/media/gfk.2e1c9a4676bef9545da4.png",
+    "static/media/udemy.png": "/francesca-rigoni-cv/static/media/udemy.9b24c7bf3e122eb73302.png",
     "index.html": "/francesca-rigoni-cv/index.html",
-    "main.512dae0c.css.map": "/francesca-rigoni-cv/static/css/main.512dae0c.css.map",
-    "main.5c11ac89.js.map": "/francesca-rigoni-cv/static/js/main.5c11ac89.js.map",
+    "main.c57c7be3.css.map": "/francesca-rigoni-cv/static/css/main.c57c7be3.css.map",
+    "main.b6ee58a0.js.map": "/francesca-rigoni-cv/static/js/main.b6ee58a0.js.map",
     "453.72a4bc83.chunk.js.map": "/francesca-rigoni-cv/static/js/453.72a4bc83.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.512dae0c.css",
-    "static/js/main.5c11ac89.js"
+    "static/css/main.c57c7be3.css",
+    "static/js/main.b6ee58a0.js"
   ]
 }

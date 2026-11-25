@@ -1,12 +1,12 @@
 # Francesca Rigoni
 **Senior Applied Data Scientist | Data & Analytics Consultant**
 Fidenza (PR), Italy | IT & UK Citizenships
-+39 333 8210767 | francesca.rigoni.90@gmail.com | [LinkedIn](https://www.linkedin.com/)
++39 333 8210767 | francesca.rigoni.90@gmail.com | [LinkedIn](https://www.linkedin.com/in/francesca-rigoni-947a6393/)
 
 ---
 
 ## Profile
-Senior Applied Data Scientist with 10+ years of experience turning complex, multi-million-record customer, financial, grocery, and digital marketing datasets into measurable business value. Proven track record across credit risk modelling, customer propensity & segmentation, A/B testing & uplift evaluation, cloud migration (Hadoop to Microsoft Azure), and end-to-end pipeline automation using **PySpark, Python, and SQL**. Experienced client consultant, Data Governance & GDPR/PII champion, and lead technical trainer.
+Senior Applied Data Scientist with 10+ years of experience turning complex, multi-million-record customer, financial, grocery, and digital marketing datasets into measurable business value. Proven track record across credit risk modelling, customer propensity & segmentation, A/B testing & uplift evaluation, cloud migration (Hadoop to Microsoft Azure), and end-to-end pipeline automation using PySpark, Python, and SQL. Experienced client consultant, Data Governance & GDPR/PII champion, and lead technical trainer.
 
 ---
 
@@ -67,7 +67,7 @@ Senior Applied Data Scientist with 10+ years of experience turning complex, mult
 
 ---
 
-### Research Associate — GfK
+### Research Associate — GfK Boutique Research
 **Feb 2015 – Jul 2015** | *Woking, UK*
 *Promoted from Intern to Research Associate Analyst in under 2 months.*
 * Improved accuracy of PC market forecasts for client decision-making and delivered US market research for Best Buy.
@@ -76,15 +76,17 @@ Senior Applied Data Scientist with 10+ years of experience turning complex, mult
 ---
 
 ## Education
-* **MSc in Statistics** — *University of Bologna, Italy* (Sep 2012 – Oct 2014) · **110/110 cum laude**
+* **MSc in Mathematical Statistics and Probability** — *Alma Mater Studiorum – University of Bologna, Italy* (Sep 2012 – Oct 2014) · **110/110 cum laude**
 * **Visiting Researcher, Finance Department** — *Imperial College Business School, London, UK* (Feb 2014 – Jun 2014)
-* **BSc in Statistics (Joint Degree)** — *University of Bologna, Italy & University of Glasgow, UK* (Sep 2009 – Jul 2012) · **110/110 cum laude | First Class Honours**
+* **BSc in Mathematical Statistics and Probability (Joint Degree)** — *University of Bologna, Italy & University of Glasgow, UK* (Sep 2009 – Jul 2012) · **110/110 cum laude | First Class Honours**
 
 ---
 
 ## Certifications & Technical Training
-* **Python Programming (9-Week Intensive, Highest Score)** — *Massachusetts Institute of Technology (MIT)* (2021)
-* **Internal & Industry Courses:** Credit Risk & Building Scorecards, Applied Machine Learning (41h), Python & PySpark Advanced Engineering, GDPR & Information Security
+* **6.00.1x: Introduction to Computer Science and Programming Using Python** — *Massachusetts Institute of Technology (MIT)* (Aug 2021) · *9-week intensive completed with highest score*
+* **Machine Learning A-Z™: Hands-On Python & R In Data Science** — *Udemy* (Jun 2019) · *41 hours*
+* **2021 Complete Python Bootcamp From Zero to Hero in Python** — *Udemy* (Jun 2019) · *24 hours*
+* **Internal & Industry Training:** Credit Risk Modelling, Building Scorecards, GDPR & Data Governance, Lead Python & PySpark Trainer (*dunnhumby*)
 
 ---
 
