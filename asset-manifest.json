@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/francesca-rigoni-cv/static/css/main.07ba93ae.css",
+    "main.js": "/francesca-rigoni-cv/static/js/main.bca92e26.js",
+    "static/js/453.72a4bc83.chunk.js": "/francesca-rigoni-cv/static/js/453.72a4bc83.chunk.js",
+    "index.html": "/francesca-rigoni-cv/index.html",
+    "main.07ba93ae.css.map": "/francesca-rigoni-cv/static/css/main.07ba93ae.css.map",
+    "main.bca92e26.js.map": "/francesca-rigoni-cv/static/js/main.bca92e26.js.map",
+    "453.72a4bc83.chunk.js.map": "/francesca-rigoni-cv/static/js/453.72a4bc83.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07ba93ae.css",
+    "static/js/main.bca92e26.js"
+  ]
+}
