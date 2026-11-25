@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
 import SummaryData from "../data/SummaryData";
+import profile from "../images/profile.jpeg";
 
 export default function Summary() {
   const [language] = useContext(LanguageContext);
   const content = SummaryData[language];
+  const pdfUrl = `${process.env.PUBLIC_URL}/Francesca_Rigoni_CV_EN.pdf`;
 
   return (
     <section id="summary" className="summary-section">
@@ -13,20 +15,26 @@ export default function Summary() {
           <i className="fa fa-file-text-o cv-hero-icon" />
         </div>
         <h1 className="hero-title">{content.name}</h1>
-        <p className="hero-role">{content.role}</p>
-        <button
-          type="button"
+        <p className="hero-role">
+          {content.role} · <span className="citizenship-tag">{content.citizenships}</span>
+        </p>
+
+        <a
+          href={pdfUrl}
+          download="Francesca_Rigoni_CV_EN.pdf"
           className="cv-download-btn"
-          onClick={() => alert("Add your PDF file in src/assets/ to enable CV download.")}
         >
           {content.downloadBtn}
-        </button>
+        </a>
       </div>
 
       <div className="summary-grid">
-        <div className="media-placeholder">
-          <i className="fa fa-user-circle-o media-placeholder-icon" />
-          <p>{content.placeholderNote}</p>
+        <div className="profile-photo-wrap">
+          <img
+            src={profile}
+            alt="Francesca Rigoni"
+            className="profile-photo"
+          />
         </div>
 
         <ul className="info-list">
@@ -52,7 +60,13 @@ export default function Summary() {
           </li>
           <li>
             <i className="fa fa-map-marker profile-icon" />
-            <span>{content.location}</span>
+            <a href={content.locationUrl} target="_blank" rel="noreferrer">
+              {content.location}
+            </a>
+          </li>
+          <li>
+            <i className="fa fa-calendar profile-icon" />
+            <span>{content.dob}</span>
           </li>
         </ul>
       </div>

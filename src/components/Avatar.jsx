@@ -1,9 +1,12 @@
 import React from "react";
+import profile from "../images/profile.jpeg";
 
 export default function Avatar() {
   return (
-    <div className="avatar-badge" aria-label="Francesca Rigoni">
-      FR
-    </div>
+    <img
+      className="avatar-img"
+      src={profile}
+      alt="Francesca Rigoni"
+    />
   );
 }

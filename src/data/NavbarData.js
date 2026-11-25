@@ -1,6 +1,22 @@
 const NavbarData = {
-  UK: ["Summary", "Skills", "Work Experience", "Projects", "Education", "Courses"],
-  IT: ["Profilo", "Competenze", "Esperienza Lavorativa", "Progetti", "Educazione", "Corsi"],
+  UK: [
+    "Summary",
+    "Skills",
+    "Experience",
+    "Projects",
+    "Education",
+    "Certifications",
+    "Languages",
+  ],
+  IT: [
+    "Profilo",
+    "Competenze",
+    "Esperienza",
+    "Progetti",
+    "Educazione",
+    "Certificazioni",
+    "Lingue",
+  ],
 };
 
 export default NavbarData;

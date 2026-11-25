@@ -11,10 +11,11 @@ export default function Navbar() {
   const anchors = [
     "#summary",
     "#skills",
-    "#work-experience",
+    "#experience",
     "#projects",
     "#education",
-    "#courses",
+    "#certifications",
+    "#languages-interests",
   ];
 
   return (
