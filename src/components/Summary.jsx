@@ -6,7 +6,11 @@ import profile from "../images/profile.jpeg";
 export default function Summary() {
   const [language] = useContext(LanguageContext);
   const content = SummaryData[language];
-  const pdfUrl = `${process.env.PUBLIC_URL}/Francesca_Rigoni_CV_EN.pdf`;
+  const pdfFileName =
+    language === "IT"
+      ? "Francesca_Rigoni_CV_IT.pdf"
+      : "Francesca_Rigoni_CV_EN.pdf";
+  const pdfUrl = `${process.env.PUBLIC_URL}/${pdfFileName}`;
 
   return (
     <section id="summary" className="summary-section">
@@ -21,7 +25,7 @@ export default function Summary() {
 
         <a
           href={pdfUrl}
-          download="Francesca_Rigoni_CV_EN.pdf"
+          download={pdfFileName}
           className="cv-download-btn"
         >
           {content.downloadBtn}

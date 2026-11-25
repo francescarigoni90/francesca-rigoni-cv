@@ -14,8 +14,17 @@ export default function Education() {
           {data.education.map((edu) => (
             <article className="cv-card" key={`${edu.institution}-${edu.period}`}>
               <div className="edu-top">
-                <span className="period-pill">{edu.period}</span>
-                <span className="grade-pill">{edu.grade}</span>
+                <div className="edu-logo-wrap">
+                  <img
+                    src={edu.logo}
+                    alt={`${edu.institution} logo`}
+                    className="edu-logo-img"
+                  />
+                </div>
+                <div className="edu-pills">
+                  <span className="period-pill">{edu.period}</span>
+                  <span className="grade-pill">{edu.grade}</span>
+                </div>
               </div>
               <h3 className="card-title">{edu.degree}</h3>
               <p className="edu-inst">{edu.institution}</p>

@@ -578,6 +578,375 @@ section {
   color: #1b262c;
 }
 
+/* Alternating Experience Timeline (Diego-inspired modern style) */
+.timeline-section-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 2.1rem;
+}
+
+.main-timeline {
+  position: relative;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/* Central vertical dashed line */
+.main-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 2px dashed #44535c;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 0.75rem 2.75rem;
+}
+
+.timeline-item.left {
+  margin-left: 0;
+}
+
+.timeline-item.right {
+  margin-left: 50%;
+}
+
+/* Dot on center line */
+.timeline-dot {
+  position: absolute;
+  top: 76px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #1b262c;
+  border: 3px solid #dfd3c3;
+  box-shadow: 0 0 0 2px #44535c;
+  z-index: 2;
+}
+
+.timeline-item.left .timeline-dot {
+  right: -8px;
+}
+
+.timeline-item.right .timeline-dot {
+  left: -8px;
+}
+
+/* Card shell */
+.tl-card {
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(27, 38, 44, 0.16);
+  text-align: left;
+  background-color: #465761;
+  color: #f3ede4;
+}
+
+/* Inward arrow pointing toward center line */
+.tl-card::after {
+  content: "";
+  position: absolute;
+  top: 63px;
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+}
+
+.timeline-item.left .tl-card::after {
+  right: -10px;
+  border-left: 10px solid #465761;
+}
+
+.timeline-item.right .tl-card::after {
+  left: -10px;
+  border-right: 10px solid #465761;
+}
+
+/* Outer circular company badge */
+/* 2 & 3. Company logo circle in top-right corner of every card */
+.tl-company-circle {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 3px solid #dfd3c3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.tl-company-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tl-card-header {
+  background-color: #1b262c;
+  padding: 0.9rem 3.25rem 0.9rem 1.25rem;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.timeline-item.left .tl-company-circle {
+  left: -26px;
+}
+
+.timeline-item.right .tl-company-circle {
+  right: -26px;
+}
+
+
+.tl-role {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #dfd3c3;
+}
+
+.tl-card-body {
+  padding: 1.1rem 1.65rem 1.35rem;
+}
+
+.tl-company-row {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.35rem;
+}
+
+/* Hover info tooltip */
+.tl-tooltip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: #dfd3c3;
+  font-size: 0.95rem;
+}
+
+.tl-tooltip .tl-tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: 240px;
+  background-color: #1b262c;
+  color: #dfd3c3;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+  border-radius: 6px;
+  padding: 0.6rem 0.75rem;
+  position: absolute;
+  z-index: 10;
+  bottom: 135%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.tl-tooltip:hover .tl-tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tl-meta-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #dfd3c3;
+  margin-bottom: 0.25rem;
+}
+
+.tl-award {
+  display: inline-block;
+  margin: 0.4rem 0 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  background-color: rgba(223, 211, 195, 0.16);
+  color: #dfd3c3;
+}
+
+.tl-bullets {
+  margin: 0.75rem 0 0.9rem;
+  padding-left: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #f3ede4;
+}
+
+.tl-ellipsis {
+  list-style-type: circle;
+  opacity: 0.8;
+}
+
+.tl-expand-btn {
+  background: transparent;
+  color: #dfd3c3;
+  border: 1px solid #dfd3c3;
+  padding: 0.32rem 0.8rem;
+  font-size: 0.82rem;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 1.15rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tl-expand-btn:hover {
+  background-color: #dfd3c3;
+  color: #1b262c;
+}
+
+/* Education Logos */
+.edu-logo-wrap {
+  width: 52px;
+  height: 52px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cert-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.edu-logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.edu-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: flex-end;
+}
+
+/* Interests Circular Icon Badges */
+.interests-circles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.interest-circle-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.7rem;
+}
+
+.interest-circle-badge {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background-color: #1b262c;
+  color: #dfd3c3;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(27, 38, 44, 0.18);
+  transition: transform 0.2s ease;
+}
+
+.interest-circle-item:hover .interest-circle-badge {
+  transform: translateY(-3px);
+}
+
+.interest-circle-label {
+  font-size: 0.88rem;
+  line-height: 1.35;
+  color: #1b262c;
+  font-weight: 500;
+}
+
+@media (max-width: 550px) {
+  .interests-circles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 850px) {
+  .main-timeline::before {
+    left: 18px;
+    transform: none;
+  }
+
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    width: 100%;
+    margin-left: 0;
+    padding: 0.75rem 0.5rem 0.75rem 2.9rem;
+  }
+
+  .timeline-item.left .timeline-dot,
+  .timeline-item.right .timeline-dot {
+    left: 10px;
+    right: auto;
+  }
+
+  .timeline-item.left .tl-card::after,
+  .timeline-item.right .tl-card::after {
+    left: -10px;
+    right: auto;
+    border-left: none;
+    border-right: 10px solid #465761;
+  }
+
+  .tl-company-circle {
+    display: none;
+  }
+}
+
+/* 1. Wider Experience section */
+.experience-wide {
+  max-width: 1260px;
+}
+
+.main-timeline {
+  position: relative;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
 @media (max-width: 850px) {
   .cards-grid.two-col {
     grid-template-columns: 1fr;

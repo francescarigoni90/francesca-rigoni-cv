@@ -1,3 +1,15 @@
+import dhLogo from "../images/companies/dunnhumby.png";
+import iwocaLogo from "../images/companies/iwoca.png";
+import sizmekLogo from "../images/companies/sizmek.png";
+import rfLogo from "../images/companies/rocketfuel.png";
+import gfkLogo from "../images/companies/gfk.png";
+import uniboLogo from "../images/education/unibo.png";
+import imperialLogo from "../images/education/imperial.png";
+import glasgowLogo from "../images/education/glasgow.png";
+import dunnhumbyLogo from "../images/certifications/dunnhumby.png";
+import mitLogo from "../images/certifications/mit.png";
+import udemyLogo from "../images/certifications/udemy.png";
+
 const PortfolioData = {
   UK: {
     skillsTitle: "Skills & Tech Stack",
@@ -56,67 +68,75 @@ const PortfolioData = {
     experience: [
       {
         company: "dunnhumby",
+        companyInfo:
+          "Global leader in customer data science empowering retailers, FMCG brands, and financial services (Tesco, Tesco Bank, Barclays, SMU) with data-driven insights.",
+        logo: dhLogo,
         role: "Senior Applied Data Scientist",
         period: "Nov 2018 – Present",
-        location: "London, UK (2018–2021) · Milan / Remote, Italy (2021–Present)",
-        badge: "Rated 'Excelling' (2019–2022, Mid-Year 2025)",
-        summary:
-          "Data Science Consultant & Technical Lead across Tesco Bank, The Hub (Financial Services), and Tesco Media teams.",
+        location: "London (UK) & Milan (IT)",
+        award: "Rated 'Excelling' (2019–2022, Mid-Year 2025)",
         highlights: [
-          "Tesco Bank (2021–Present): Led Microsoft Azure folder hierarchy (NFS/HDFS) and refactored ~35 Python/YAML/Bash scripts; delivered Home Insurance CAYC (~200k monthly reach, 4x uplift), Life Insurance propensity/mortality scoring with reinsurer RGA, Travel Money cosine-similarity VTS uplift, automated BAU triggers, and GDPR/PII compliance automation.",
-          "The Hub (2019–2021): Built grocery-enhanced credit risk and loan propensity models for SMU/Unicard Chile, expanding pre-approved credit card customers by 11% (~140k/mo), lifting spend by 18%, cutting SMS outreach costs by 47–50% (~$47k–$65k), and identifying 25% promo budget savings (~131M CLP).",
-          "Tesco Media (2018–2019): Diagnosed £400M+ Trade Drivers campaign performance, built monthly forecasting dashboards, and optimised A/B control group sizes from 10% to 5% (+50k exposed users, +£150k uplift).",
-          "Leadership & Tooling: Lead Python & PySpark Trainer, PySpark Toolkit Champion, Science Circle member, GCUPS (GCP modelling library) co-developer, and mentor to junior data scientists & interns.",
+          "Tesco Bank (2021–Present): Led Microsoft Azure NFS/HDFS folder architecture and refactored ~35 Python, YAML, and Bash scripts to restore Giftcard reporting on the new DSP platform.",
+          "Home Insurance CAYC: Executed GDPR/PII remediation and validated moved-house triggers on Clubcard data (70% overlap), expanding monthly addressable reach 4x to ~200k customers.",
+          "Life Insurance & RGA: Partnered with Tesco IMS and reinsurer RGA combining postcode mortality rates with grocery lifestyle flags to build 5 tiered scoring audiences.",
+          "Travel Money & ATM VTS: Built cosine-similarity lookalike matching across the Clubcard base over 3- and 6-month windows, proving incremental in-store spend.",
+          "The Hub — SMU/Unicard Chile (2019–2021): Built grocery-enhanced credit risk & loan propensity models (+11% pre-approved base / ~140k/mo, +18% spend, 47–50% SMS savings, 25% promo budget savings).",
+          "Tesco Media (2018–2019): Diagnosed £400M+ Trade Drivers performance with automated monthly dashboards and reduced A/B control groups from 10% to 5% (+50k exposed users, +£150k uplift).",
+          "Leadership & Governance: Lead Python & PySpark Trainer, PySpark Toolkit Champion, GCUPS co-developer, GDPR/DGB liaison, and mentor to junior data scientists.",
         ],
       },
       {
         company: "iwoca",
+        companyInfo:
+          "Leading European FinTech providing fast, flexible working-capital loans to small and medium-sized businesses.",
+        logo: iwocaLogo,
         role: "Growth Marketing Analyst",
         period: "May 2018 – Nov 2018",
-        location: "London, UK",
-        summary:
-          "Streamlined and automated B2B marketing and sales pipelines in Python and SQL.",
+        location: "London (UK)",
         highlights: [
-          "Built daily Python scripts connecting marketing email engagement to the sales dialler API to dynamically reactivate/deactivate SME leads.",
-          "Automated SQL-to-email-API data uploads for monthly campaigns, eliminating repetitive manual tasks.",
-          "Managed daily marketing database integrity, defined conflict-resolution rules for SME records, and enforced strict customer data security.",
+          "Built daily Python scripts connecting marketing email engagement to the sales dialler API to automatically reactivate/deactivate SME leads.",
+          "Automated SQL-to-email-API data transfers in Python for monthly campaigns, eliminating repetitive manual uploads.",
+          "Managed daily marketing database integrity, defined conflict-resolution rules for SME records, and enforced strict customer data access controls.",
         ],
       },
       {
         company: "Sizmek (formerly Rocket Fuel)",
-        role: "Senior Data & Strategy Analyst (Feb–May 2018) · Data & Strategy Analyst (Nov 2017–Jan 2018)",
+        companyInfo:
+          "Global ad-tech platform (later acquired by Amazon and Zeta) that integrated Rocket Fuel's AI-driven demand-side platform.",
+        logo: sizmekLogo,
+        role: "Senior Data & Strategy Analyst",
         period: "Nov 2017 – May 2018",
-        location: "London, UK",
-        summary:
-          "Led EMEA digital advertising analytics and client growth strategies across the UK, Spain, and Italy following acquisition.",
+        location: "London (UK)",
         highlights: [
-          "Developed growth strategies for Rocket Fuel/Sizmek's primary EMEA account, driving a €6M+ contract renewal.",
+          "Developed growth advertising strategies for Rocket Fuel/Sizmek's primary EMEA client, driving a €6M+ contract renewal.",
           "Spearheaded multi-touch attribution analysis shaping the strategy for the top Italian client (€2M+).",
-          "Delivered cross-channel performance forecasting, user-journey analysis, and A/B testing.",
+          "Delivered cross-channel performance forecasting, user-journey analysis, and A/B testing across UK, Spain, and Italy.",
         ],
       },
       {
         company: "Rocket Fuel Inc.",
-        role: "Data & Strategy Analyst (Jan–Oct 2017) · Associate Analyst (Jul 2015–Dec 2016)",
+        companyInfo:
+          "Predictive marketing and programmatic advertising company leveraging AI and big data for real-time bidding.",
+        logo: rfLogo,
+        role: "Data & Strategy Analyst · Associate Analyst",
         period: "Jul 2015 – Oct 2017",
-        location: "London, UK",
-        badge: "Fast-track promotions (<18m & 12m)",
-        summary:
-          "Analytical strategy and platform improvement across EMEA accounts.",
+        location: "London (UK)",
+        award: "Fast-track promotions (<18m & 12m)",
         highlights: [
-          "Designed and deployed a SQL-powered Tableau dashboard tracking country- and account-level EMEA figures for senior leadership.",
+          "Designed and deployed a SQL-powered Tableau dashboard providing country- and account-level EMEA visibility for senior leadership.",
           "Partnered with the US engineering team on statistical analyses that improved the Cross-Device attribution algorithm into a flagship product.",
         ],
       },
       {
         company: "GfK Boutique Research",
-        role: "Research Associate (promoted from Intern in <2 months)",
+        companyInfo:
+          "Global market research and consumer intelligence firm delivering data-driven forecasts and retail insights.",
+        logo: gfkLogo,
+        role: "Research Associate (promoted from Intern in <2m)",
         period: "Feb 2015 – Jul 2015",
-        location: "Woking, Surrey, UK",
-        summary:
-          "Market forecasting, US retail research, and agile team coordination.",
+        location: "Woking (UK)",
         highlights: [
-          "Improved accuracy of PC market forecasts and contributed to in-depth US market research for Best Buy.",
+          "Improved accuracy of PC market forecasts for client decision-making and contributed to US market research for Best Buy.",
           "Served as Scrum Master for the PC & Mobile team, streamlining workflows and sprint delivery.",
         ],
       },
@@ -194,6 +214,7 @@ const PortfolioData = {
         location: "Bologna, Italy",
         period: "2012 – 2014",
         grade: "110/110 cum laude",
+        logo: uniboLogo,
       },
       {
         degree: "Visiting Researcher, Finance Department",
@@ -201,6 +222,7 @@ const PortfolioData = {
         location: "London, United Kingdom",
         period: "Feb 2014 – Jun 2014",
         grade: "Research Exchange",
+        logo: imperialLogo,
       },
       {
         degree: "Bachelor's Degree in Mathematical Statistics and Probability (Joint Degree)",
@@ -208,6 +230,7 @@ const PortfolioData = {
         location: "Glasgow, United Kingdom",
         period: "2011 – 2012",
         grade: "First Class Honours",
+        logo: glasgowLogo,
       },
       {
         degree: "Bachelor's Degree in Mathematical Statistics and Probability",
@@ -215,6 +238,7 @@ const PortfolioData = {
         location: "Bologna, Italy",
         period: "2009 – 2012",
         grade: "110/110 cum laude",
+        logo: uniboLogo,
       },
     ],
 
@@ -225,24 +249,28 @@ const PortfolioData = {
         issuer: "Massachusetts Institute of Technology (MIT)",
         date: "Aug 2021",
         note: "Completed 9-week intensive course with highest score.",
+        logo: mitLogo,
       },
       {
         title: "Machine Learning A-Z™: Hands-On Python & R In Data Science",
         issuer: "Udemy",
         date: "Jun 2019",
         note: "41-hour applied machine learning curriculum.",
+        logo: udemyLogo,
       },
       {
         title: "2021 Complete Python Bootcamp From Zero to Hero in Python",
         issuer: "Udemy",
         date: "Jun 2019",
         note: "24-hour end-to-end Python engineering course.",
+        logo: udemyLogo,
       },
       {
         title: "Credit Risk Modelling, Building Scorecards & GDPR Data Governance",
         issuer: "dunnhumby Internal Academy",
         date: "2019 – 2024",
         note: "Specialist training + Lead Internal Trainer for Python & PySpark.",
+        logo: dunnhumbyLogo,
       },
     ],
 
@@ -318,67 +346,75 @@ const PortfolioData = {
     experience: [
       {
         company: "dunnhumby",
+        companyInfo:
+          "Leader globale nella customer data science per il retail e i servizi finanziari (Tesco, Tesco Bank, Barclays, SMU).",
+        logo: dhLogo,
         role: "Senior Applied Data Scientist",
         period: "Nov 2018 – Presente",
-        location: "Londra, UK (2018–2021) · Milano / Remoto, Italia (2021–Presente)",
-        badge: "Valutazione 'Excelling' (2019–2022, Mid-Year 2025)",
-        summary:
-          "Data Science Consultant & Technical Lead nei team Tesco Bank, The Hub (Servizi Finanziari) e Tesco Media.",
+        location: "Londra (UK) & Milano (IT)",
+        award: "Valutazione 'Excelling' (2019–2022, Mid-Year 2025)",
         highlights: [
-          "Tesco Bank (2021–Presente): Progettazione gerarchia cartelle NFS/HDFS su Microsoft Azure e refactoring di ~35 script Python/YAML/Bash; sviluppo trigger Home Insurance CAYC (~200k clienti/mese, 4x reach), scoring Life Insurance con il riassicuratore RGA, analisi VTS Travel Money con cosine similarity, automazione campagne BAU e governance GDPR/PII.",
-          "The Hub (2019–2021): Sviluppo modelli di credit risk e propensione al prestito per SMU/Unicard Cile con dati grocery, aumentando i pre-approvati dell'11% (~140k/mese), +18% spesa post-attivazione, -47–50% costi SMS (~$47k–$65k) e -25% budget promozionale (~131M CLP).",
-          "Tesco Media (2018–2019): Analisi diagnostica e dashboard mensile per campagne Trade Drivers (£400M+ uplift); riduzione gruppi di controllo A/B dal 10% al 5% (+50k utenti esposti, +£150k uplift).",
-          "Leadership & Formazione: Lead Trainer Python & PySpark, PySpark Toolkit Champion, membro Science Circle, co-sviluppatrice libreria GCUPS su GCP e mentor per junior data scientist e stagisti.",
+          "Tesco Bank (2021–Presente): Progettazione gerarchia NFS/HDFS su Microsoft Azure e refactoring di ~35 script Python, YAML e Bash per ripristinare i report Giftcard sulla piattaforma DSP.",
+          "Home Insurance CAYC: Bonifica GDPR/PII e validazione trigger 'cambio casa' su dati Clubcard (70% overlap), quadruplicando l'audience mensile a ~200k clienti.",
+          "Life Insurance & RGA: Collaborazione con Tesco IMS e riassicuratore RGA integrando tassi di mortalità per CAP e lifestyle grocery in 5 fasce di scoring.",
+          "Travel Money & ATM VTS: Matching lookalike con cosine similarity sull'intera base Clubcard su finestre di 3 e 6 mesi per dimostrare l'uplift di spesa in negozio.",
+          "The Hub — SMU/Unicard Cile (2019–2021): Modelli di credit risk e propensione prestiti (+11% pre-approvati / ~140k/mese, +18% spesa, -47–50% costi SMS, -25% budget promo).",
+          "Tesco Media (2018–2019): Analisi diagnostica Trade Drivers (£400M+ uplift) con dashboard mensile e riduzione gruppi di controllo dal 10% al 5% (+50k utenti esposti, +£150k uplift).",
+          "Leadership & Governance: Lead Trainer Python & PySpark, PySpark Toolkit Champion, co-sviluppatrice GCUPS, referente GDPR/DGB e mentor per junior data scientist.",
         ],
       },
       {
         company: "iwoca",
+        companyInfo:
+          "FinTech europea leader nei finanziamenti rapidi e flessibili per piccole e medie imprese (PMI).",
+        logo: iwocaLogo,
         role: "Growth Marketing Analyst",
         period: "Mag 2018 – Nov 2018",
-        location: "Londra, UK",
-        summary:
-          "Automazione e ottimizzazione dei processi di marketing e vendita B2B in Python e SQL.",
+        location: "Londra (UK)",
         highlights: [
-          "Sviluppo script Python giornalieri collegati alle API del dialer commerciale per riattivare/disattivare automaticamente i lead PMI in base all'engagement email.",
-          "Automazione del trasferimento dati da SQL all'API email per le campagne mensili, eliminando i caricamenti manuali.",
+          "Sviluppo di script Python giornalieri collegati alle API del dialer vendite per riattivare/disattivare automaticamente i lead PMI in base all'engagement email.",
+          "Automazione dei caricamenti SQL → API email per le campagne mensili, eliminando le attività manuali ripetitive.",
           "Gestione quotidiana del database marketing, definizione regole di validazione e controlli di sicurezza sui dati riservati.",
         ],
       },
       {
         company: "Sizmek (già Rocket Fuel)",
-        role: "Senior Data & Strategy Analyst (Feb–Mag 2018) · Data & Strategy Analyst (Nov 2017–Gen 2018)",
+        companyInfo:
+          "Piattaforma ad-tech globale (poi acquisita da Amazon e Zeta) nata dall'acquisizione della DSP AI di Rocket Fuel.",
+        logo: sizmekLogo,
+        role: "Senior Data & Strategy Analyst",
         period: "Nov 2017 – Mag 2018",
-        location: "Londra, UK",
-        summary:
-          "Strategie di crescita e analisi pubblicitaria digitale EMEA per i mercati UK, Spagna e Italia.",
+        location: "Londra (UK)",
         highlights: [
-          "Sviluppo strategie per il principale cliente EMEA, contribuendo al rinnovo contrattuale da oltre €6M.",
-          "Guida del progetto di attribuzione multi-touch per il primo cliente italiano (€2M+).",
-          "Analisi cross-canale, forecasting, user journey e A/B testing.",
+          "Sviluppo di strategie pubblicitarie per il principale cliente EMEA, portando al rinnovo del contratto da oltre €6M.",
+          "Guida dell'analisi di attribuzione multi-touch per il top client italiano (€2M+).",
+          "Analisi cross-canale, forecasting, user journey e A/B testing per UK, Spagna e Italia.",
         ],
       },
       {
         company: "Rocket Fuel Inc.",
-        role: "Data & Strategy Analyst (Gen–Ott 2017) · Associate Analyst (Lug 2015–Dic 2016)",
+        companyInfo:
+          "Azienda pioniera nel marketing predittivo e programmatic advertising basato su AI e big data.",
+        logo: rfLogo,
+        role: "Data & Strategy Analyst · Associate Analyst",
         period: "Lug 2015 – Ott 2017",
-        location: "Londra, UK",
-        badge: "Promozioni rapide (<18m e 12m)",
-        summary:
-          "Analisi strategica e sviluppo algoritmico per campagne digitali EMEA.",
+        location: "Londra (UK)",
+        award: "Promozioni rapide (<18m e 12m)",
         highlights: [
-          "Progettazione e lancio di una dashboard Tableau alimentata via SQL per il monitoraggio EMEA a livello paese/account da parte del senior leadership.",
-          "Supporto al team ingegneristico USA per migliorare l'algoritmo di attribuzione Cross-Device.",
+          "Progettazione e implementazione di una dashboard Tableau su query SQL per la reportistica EMEA utilizzata dal senior leadership team.",
+          "Supporto al team ingegneristico USA per migliorare l'algoritmo di attribuzione Cross-Device, divenuto prodotto di punta.",
         ],
       },
       {
         company: "GfK Boutique Research",
-        role: "Research Associate (promossa da Intern in <2 mesi)",
+        companyInfo:
+          "Società globale di ricerche di mercato e previsioni strategiche per il settore retail e tecnologia.",
+        logo: gfkLogo,
+        role: "Research Associate (promossa da Intern in <2m)",
         period: "Feb 2015 – Lug 2015",
-        location: "Woking, Surrey, UK",
-        summary:
-          "Previsioni di mercato, ricerche sul mercato USA e coordinamento agile.",
+        location: "Woking (UK)",
         highlights: [
-          "Miglioramento dell'accuratezza delle previsioni sul mercato PC e analisi di mercato USA per Best Buy.",
+          "Miglioramento dell'accuratezza delle previsioni sul mercato PC e analisi del mercato statunitense per Best Buy.",
           "Ruolo di Scrum Master per il team PC & Mobile per ottimizzare i flussi di lavoro.",
         ],
       },
@@ -456,6 +492,7 @@ const PortfolioData = {
         location: "Bologna, Italia",
         period: "2012 – 2014",
         grade: "110/110 e lode",
+        logo: uniboLogo,
       },
       {
         degree: "Visiting Researcher, Dipartimento di Finanza",
@@ -463,6 +500,7 @@ const PortfolioData = {
         location: "Londra, Regno Unito",
         period: "Feb 2014 – Giu 2014",
         grade: "Ricerca all'estero",
+        logo: imperialLogo,
       },
       {
         degree: "Bachelor's Degree in Mathematical Statistics and Probability (Joint Degree)",
@@ -470,6 +508,7 @@ const PortfolioData = {
         location: "Glasgow, Regno Unito",
         period: "2011 – 2012",
         grade: "First Class Honours",
+        logo: glasgowLogo,
       },
       {
         degree: "Laurea Triennale in Statistica Matematica e Probabilità",
@@ -477,6 +516,7 @@ const PortfolioData = {
         location: "Bologna, Italia",
         period: "2009 – 2012",
         grade: "110/110 e lode",
+        logo: uniboLogo,
       },
     ],
 
@@ -487,24 +527,28 @@ const PortfolioData = {
         issuer: "Massachusetts Institute of Technology (MIT)",
         date: "Ago 2021",
         note: "Corso intensivo di 9 settimane completato con il punteggio massimo.",
+        logo: mitLogo,
       },
       {
         title: "Machine Learning A-Z™: Hands-On Python & R In Data Science",
         issuer: "Udemy",
         date: "Giu 2019",
         note: "Percorso pratico di Machine Learning (41 ore).",
+        logo: udemyLogo,
       },
       {
         title: "2021 Complete Python Bootcamp From Zero to Hero in Python",
         issuer: "Udemy",
         date: "Giu 2019",
         note: "Corso completo di programmazione Python (24 ore).",
+        logo: udemyLogo,
       },
       {
         title: "Credit Risk Modelling, Building Scorecards & GDPR Data Governance",
         issuer: "dunnhumby Internal Academy",
         date: "2019 – 2024",
         note: "Formazione specialistica + Lead Trainer interno per Python & PySpark.",
+        logo: dunnhumbyLogo,
       },
     ],
 

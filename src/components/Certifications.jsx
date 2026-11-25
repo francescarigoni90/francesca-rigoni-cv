@@ -14,7 +14,16 @@ export default function Certifications() {
           {data.certifications.map((cert) => (
             <article className="cv-card" key={cert.title}>
               <div className="edu-top">
-                <span className="cert-issuer">{cert.issuer}</span>
+                <div className="cert-brand">
+                  <div className="edu-logo-wrap">
+                    <img
+                      src={cert.logo}
+                      alt={`${cert.issuer} logo`}
+                      className="edu-logo-img"
+                    />
+                  </div>
+                  <span className="cert-issuer">{cert.issuer}</span>
+                </div>
                 <span className="period-pill">{cert.date}</span>
               </div>
               <h3 className="card-title">{cert.title}</h3>

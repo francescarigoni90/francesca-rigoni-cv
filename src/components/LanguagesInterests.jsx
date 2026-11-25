@@ -35,14 +35,16 @@ export default function LanguagesInterests() {
 
           <div className="cv-card">
             <h2 className="section-heading left">{data.interestsTitle}</h2>
-            <ul className="interests-list">
+            <div className="interests-circles-grid">
               {data.interests.map((item) => (
-                <li key={item.label}>
-                  <i className={`fa ${item.icon} interest-icon`} />
-                  <span>{item.label}</span>
-                </li>
+                <div className="interest-circle-item" key={item.label}>
+                  <div className="interest-circle-badge" aria-hidden="true">
+                    <i className={`fa ${item.icon}`} />
+                  </div>
+                  <span className="interest-circle-label">{item.label}</span>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>
