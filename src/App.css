@@ -344,6 +344,7 @@ section {
 }
 
 .cv-card {
+  min-width: 0;
   background-color: #f6f1ea;
   border-radius: 10px;
   padding: 1.5rem;
@@ -377,14 +378,16 @@ section {
 .skill-bar-header {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
   font-size: 0.92rem;
   margin-bottom: 0.3rem;
-  gap: 0.5rem;
+  gap: 0.25rem 0.75rem;
 }
 
 .skill-level {
   opacity: 0.75;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .skill-track {
