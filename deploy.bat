@@ -5,7 +5,7 @@ REM === Configuration ===
 set "GITHUB_USER=francescarigoni90"
 set "REPO_NAME=francesca-rigoni-cv"
 set "BRANCH=main"
-set "REPO_URL=https://github.com/%GITHUB_USER%/%REPO_NAME%"
+set "REPO_URL=https://github.com/%GITHUB_USER%/%REPO_NAME%.git"
 
 if "%GITHUB_USER%"=="GITHUB_USERNAME" (
     echo [ERROR] Please edit deploy.bat and replace GITHUB_USERNAME with Francesca's actual GitHub username.
