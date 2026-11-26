@@ -1,41 +1,245 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
-  font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  color: #1b262c;
-  font-size: 10pt;
-  line-height: 1.42;
+  margin: 0;
+  padding: 0;
+  width: 210mm;
+  height: 297mm;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #222222;
+  font-size: 8.1pt;
+  line-height: 1.32;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
-h1 {
-  font-size: 20pt;
-  margin-bottom: 2px;
-  color: #1b262c;
+
+.cv-page {
+  display: grid;
+  grid-template-columns: 67mm 143mm;
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
 }
-h2 {
+
+/* Left Sidebar */
+.sidebar {
+  background-color: #ececec;
+  padding: 9mm 5.5mm 7mm 6mm;
+  height: 297mm;
+}
+
+.sidebar h1 {
+  font-size: 16.5pt;
+  margin: 0 0 2mm;
+  color: #000000;
+  text-align: center;
+  line-height: 1.15;
+}
+
+.sidebar .sb-role {
+  font-size: 11pt;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  margin: 0 0 1.5mm;
+  color: #111111;
+}
+
+.sidebar .sb-citizen {
+  font-size: 8.5pt;
+  text-align: center;
+  margin: 0 0 4.5mm;
+  color: #222222;
+}
+
+.sidebar h2 {
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: #000000;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 1mm;
+  margin: 4mm 0 2.5mm;
+}
+
+/* Personal Info Rows */
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 2.5mm;
+  margin-bottom: 2.2mm;
+  font-size: 7.9pt;
+}
+
+.info-row a {
+  color: #0b4f8a;
+  text-decoration: underline;
+}
+
+.info-icon {
+  width: 5.8mm;
+  height: 5.8mm;
+  border-radius: 50%;
+  background-color: #1976d2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Centered Skills List */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3mm;
+  text-align: center;
+}
+
+.sidebar ul li {
+  margin-bottom: 1mm;
+  font-size: 8pt;
+}
+
+/* Progress Bars (Software & Languages) */
+.bar-item {
+  margin-bottom: 2.4mm;
+}
+
+.bar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5mm;
+  margin-bottom: 0.8mm;
+}
+
+.bar-name {
+  font-size: 7.8pt;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.15;
+}
+
+.bar-level {
+  font-size: 6.6pt;
+  color: #333333;
+  white-space: nowrap;
+}
+
+.bar-track {
+  width: 100%;
+  height: 1.6mm;
+  background-color: #ffffff;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background-color: #0a3668;
+}
+
+/* Right Main Column */
+.main {
+  background-color: #ffffff;
+  padding: 7.5mm 7mm 6mm 6.5mm;
+  height: 297mm;
+}
+
+.main > p:first-child {
+  margin: 0 0 3.5mm;
+  font-size: 7.9pt;
+  line-height: 1.35;
+  color: #333333;
+}
+
+/* Section Headers with Blue Circle Icon */
+.sec-head {
+  display: flex;
+  align-items: center;
+  gap: 2.5mm;
+  margin: 3.2mm 0 2.5mm;
+}
+
+.sec-icon {
+  width: 6.8mm;
+  height: 6.8mm;
+  border-radius: 50%;
+  background-color: #1976d2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sec-head h2 {
   font-size: 12.5pt;
-  border-bottom: 1.5px solid #1b262c;
-  padding-bottom: 3px;
-  margin-top: 14px;
-  margin-bottom: 6px;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
+  font-weight: 700;
+  color: #0b4f8a;
+  margin: 0;
+  white-space: nowrap;
 }
-h3 {
-  font-size: 10.8pt;
-  margin-top: 10px;
-  margin-bottom: 2px;
+
+.sec-line {
+  flex: 1;
+  height: 1px;
+  background-color: #cccccc;
+  margin-top: 1mm;
 }
-h4 {
-  font-size: 10pt;
-  margin-top: 6px;
-  margin-bottom: 2px;
-  color: #324a56;
+
+/* Two-Column Entries (Left Date + Right Content) */
+.entry {
+  display: grid;
+  grid-template-columns: 18.5mm 1fr;
+  gap: 2.5mm;
+  margin-bottom: 2.6mm;
 }
-ul {
-  margin-top: 3px;
-  padding-left: 16px;
+
+.entry-date {
+  font-size: 7.4pt;
+  color: #555555;
+  line-height: 1.25;
+  padding-top: 0.5mm;
 }
-li {
-  margin-bottom: 3px;
+
+.entry-body h3 {
+  font-size: 9.6pt;
+  font-weight: 700;
+  margin: 0 0 0.4mm;
+  color: #111111;
 }
-a {
-  color: #1b262c;
+
+.entry-body p {
+  margin: 0 0 0.8mm;
+  font-size: 7.9pt;
+}
+
+.entry-body ul {
+  margin: 0.6mm 0 0;
+  padding-left: 3.8mm;
+}
+
+.entry-body li {
+  margin-bottom: 0.7mm;
+  font-size: 7.65pt;
+  line-height: 1.28;
+  color: #2b2b2b;
+}
+
+/* Interests list */
+.main > ul {
+  margin: 1mm 0 0 18.5mm;
+  padding-left: 4.5mm;
+}
+
+.main > ul li {
+  font-size: 7.8pt;
+  margin-bottom: 0.9mm;
 }
