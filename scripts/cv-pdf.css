@@ -149,14 +149,14 @@ body {
 /* Right Main Column */
 .main {
   background-color: #ffffff;
-  padding: 7.5mm 7mm 6mm 6.5mm;
+  padding: 5.5mm 7mm 5mm 6.5mm;
   height: 297mm;
 }
 
 .main > p:first-child {
-  margin: 0 0 3.5mm;
-  font-size: 7.9pt;
-  line-height: 1.35;
+  margin: 0 0 2.2mm;
+  font-size: 7.8pt;
+  line-height: 1.28;
   color: #333333;
 }
 
@@ -165,7 +165,7 @@ body {
   display: flex;
   align-items: center;
   gap: 2.5mm;
-  margin: 3.2mm 0 2.5mm;
+  margin: 2.2mm 0 1.6mm;
 }
 
 .sec-icon {
@@ -199,7 +199,7 @@ body {
   display: grid;
   grid-template-columns: 18.5mm 1fr;
   gap: 2.5mm;
-  margin-bottom: 2.6mm;
+  margin-bottom: 1.7mm;
 }
 
 .entry-date {
@@ -227,19 +227,21 @@ body {
 }
 
 .entry-body li {
-  margin-bottom: 0.7mm;
-  font-size: 7.65pt;
-  line-height: 1.28;
+  margin-bottom: 0.4mm;
+  font-size: 7.55pt;
+  line-height: 1.23;
   color: #2b2b2b;
 }
 
+
 /* Interests list */
 .main > ul {
-  margin: 1mm 0 0 18.5mm;
+  margin: 0.8mm 0 0 18.5mm;
   padding-left: 4.5mm;
 }
 
+
 .main > ul li {
-  font-size: 7.8pt;
-  margin-bottom: 0.9mm;
+  font-size: 7.6pt;
+  margin-bottom: 0.5mm;
 }
